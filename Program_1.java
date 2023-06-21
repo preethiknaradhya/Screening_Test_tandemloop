@@ -5,11 +5,12 @@ class Calci {
      double a;
      double b;
 
-    public Calci(double num1, double num2) {
+    public Calci(double num1, double num2) //function of calci
+    {
         a = num1;
         b = num2;
     }
-
+//Logic functions for 4 given requirements
     public double addition() {
         return a + b;
     }
@@ -34,22 +35,23 @@ class Calci {
 
 public class Program_1 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);//Input from the user
 
-        System.out.print("Enter First number: ");
+        System.out.print("Enter First number: ");//First Input
         double a = in.nextDouble();
 
-        System.out.print("Enter Second number: ");
+        System.out.print("Enter Second number: ");//Second Input
         double b = in.nextDouble();
 
-        System.out.print("Enter the operatotrs (+, -, *, /): ");
+        System.out.print("Enter the operatotrs (+, -, *, /): ");//Operators input
         String operation = in.next();
 
-        Calci calculator = new Calci(a, b);
+        Calci calculator = new Calci(a, b);//calling the function
 
         double answer;
 
-        switch (operation) {
+        switch (operation)//Switch case used for logic
+	{
             case "+":
             	answer = calculator.addition();
                 break;
