@@ -5,7 +5,8 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Program_4 {
-    public static Map<Integer, Integer> Output(List<Integer> numbers) {
+    public static Map<Integer, Integer> Output(List<Integer> numbers) 
+    {
         Map<Integer, Integer> multiply = new HashMap<>();
         multiply.put(1, 0);
         multiply.put(2, 0);
@@ -31,10 +32,10 @@ public class Program_4 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter the numbers separated by commas: ");
-        String x = in.nextLine();
+        String x = in.nextLine();//Input by comma sepertaed values
         in.close();
         
-        String[] arrayinput = x.split(",");
+        String[] arrayinput = x.split(",");//helps to take input with comma seperated values
         List<Integer> a = new ArrayList<>();
         for (String number : arrayinput) {
             a.add(Integer.parseInt(number.trim()));
